@@ -1,4 +1,4 @@
-#Tercer metodo para calcular la derivada
+#Cuarto metodo para calcular la derivada
 from math import*
 def f(x):
 	return eval(fs)
