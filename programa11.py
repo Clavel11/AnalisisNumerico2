@@ -10,6 +10,12 @@ def imprimirMatriz(A):
 		for e in f:
 			print('{:10.15f}'.format(e), end=' ')
 		print()
+		
+def crear_matriz(A):
+	"""Función que crea una matriz llena de ceros
+	de tamaño NxN"""
+	for i in range(N+1):
+		A.append([0]*(N+1))
 	
 fs = input('f(x) = ')
 a = eval(input('Límmite inferior = '))
@@ -19,13 +25,11 @@ N = eval(input('Número de subintervalos = '))
 
 #Matriz R
 R = []
-for i in range(N+1):
-	R.append([0]*(N+1))
+crear_matriz(R)
 	
 #Matriz de errores
 E = []
-for i in range(N+1):
-	E.append([0]*(N+1))
+crear_matriz(E)
 
 #Cálculo de R[0][0]
 h = (b - a)
