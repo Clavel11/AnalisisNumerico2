@@ -19,7 +19,7 @@ print('{:4.4f}{:20.10f}'.format(a, val))
 
 h = (b-a)/n
 
-for i in range(1,101):
+for i in range(1,n+1):
 	tiempo = a + i*h
 	xh = metodo_euler(val, tiempo)
 	print('{:4.4f}{:20.10f}'.format(tiempo, xh))
