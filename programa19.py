@@ -3,17 +3,13 @@
 
 from math import*
 
-def f(x):
+def f(x,t):
 	return eval(fs)
 	
-def g(x):
-	return eval(ts)
-	
 def metodo_euler(x,t):
-	return x + h*(f(x) + g(t))
+	return x + h*f(x,t)
 	
-fs = input('x prima, sólo términos x = ')
-ts = input('x prima, sólo términos t = ')
+fs = input('x prima = ')
 a  = eval(input('Tiempo inicial = '))
 b  = eval(input('Tiempo final = '))
 n  = eval(input('Número de pasos = '))
